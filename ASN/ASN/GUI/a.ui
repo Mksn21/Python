@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1106</width>
+    <height>861</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Input</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DWT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HRV</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fitur HRV</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Respiratory</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>200</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>941</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>7</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Sinyal Input</string>
+     </attribute>
+     <widget class="plot" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>881</width>
+        <height>471</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>510</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fs :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>540</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Jumlah Data :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>510</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>540</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>DWT</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>921</width>
+        <height>751</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Mallat</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>911</width>
+          <height>701</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_10">
+         <attribute name="title">
+          <string>Koefiseien Filter</string>
+         </attribute>
+         <widget class="QTabWidget" name="tabWidget_9">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>901</width>
+            <height>671</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="tab_32">
+           <attribute name="title">
+            <string>h(n)</string>
+           </attribute>
+           <widget class="plot" name="widget_2" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>881</width>
+              <height>511</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_33">
+           <attribute name="title">
+            <string>g(n)</string>
+           </attribute>
+           <widget class="plot" name="widget_3" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>891</width>
+              <height>491</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_11">
+         <attribute name="title">
+          <string>Frekuensi Respon</string>
+         </attribute>
+         <widget class="QTabWidget" name="tabWidget_10">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>901</width>
+            <height>671</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_34">
+           <attribute name="title">
+            <string>H(f)</string>
+           </attribute>
+           <widget class="plot" name="widget_4" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>891</width>
+              <height>551</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_35">
+           <attribute name="title">
+            <string>G(f)</string>
+           </attribute>
+           <widget class="plot" name="widget_5" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>891</width>
+              <height>501</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Filter Bank</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>911</width>
+          <height>711</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab_12">
+         <attribute name="title">
+          <string>Koefisien Filter</string>
+         </attribute>
+         <widget class="QTabWidget" name="tabWidget_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>901</width>
+            <height>671</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>4</number>
+          </property>
+          <widget class="QWidget" name="tab_14">
+           <attribute name="title">
+            <string>q1</string>
+           </attribute>
+           <widget class="plot" name="widget_6" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>881</width>
+              <height>481</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_15">
+           <attribute name="title">
+            <string>q2</string>
+           </attribute>
+           <widget class="plot" name="widget_10" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>891</width>
+              <height>471</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_16">
+           <attribute name="title">
+            <string>q3</string>
+           </attribute>
+           <widget class="plot" name="widget_9" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>881</width>
+              <height>491</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_18">
+           <attribute name="title">
+            <string>q4</string>
+           </attribute>
+           <widget class="plot" name="widget_8" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>891</width>
+              <height>511</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_19">
+           <attribute name="title">
+            <string>q5</string>
+           </attribute>
+           <widget class="plot" name="widget_7" native="true">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>891</width>
+              <height>501</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_13">
+         <attribute name="title">
+          <string>Frekuensi Respone</string>
+         </attribute>
+         <widget class="plot" name="widget_11" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>901</width>
+            <height>511</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Hasil DWT</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>921</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_20">
+       <attribute name="title">
+        <string>Mallat</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>911</width>
+          <height>701</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="tab_22">
+         <attribute name="title">
+          <string>Orde 1</string>
+         </attribute>
+         <widget class="plot" name="widget_12" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>901</width>
+            <height>251</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="plot" name="widget_13" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>310</y>
+            <width>901</width>
+            <height>301</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_23">
+         <attribute name="title">
+          <string>orde 2</string>
+         </attribute>
+         <widget class="plot" name="widget_14" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>881</width>
+            <height>251</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="plot" name="widget_15" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>290</y>
+            <width>891</width>
+            <height>331</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_24">
+         <attribute name="title">
+          <string>Orde 3</string>
+         </attribute>
+         <widget class="plot" name="widget_16" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>901</width>
+            <height>281</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="plot" name="widget_17" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>300</y>
+            <width>901</width>
+            <height>321</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_25">
+         <attribute name="title">
+          <string>Orde 4</string>
+         </attribute>
+         <widget class="plot" name="widget_18" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>901</width>
+            <height>291</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="plot" name="widget_19" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>310</y>
+            <width>901</width>
+            <height>331</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_26">
+         <attribute name="title">
+          <string>Orde 5</string>
+         </attribute>
+         <widget class="plot" name="widget_20" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>891</width>
+            <height>311</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="plot" name="widget_21" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>330</y>
+            <width>891</width>
+            <height>311</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_21">
+       <attribute name="title">
+        <string>Filter Bank</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>911</width>
+          <height>691</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="tab_27">
+         <attribute name="title">
+          <string>Orde 1</string>
+         </attribute>
+         <widget class="plot" name="widget_22" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>901</width>
+            <height>431</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_28">
+         <attribute name="title">
+          <string>Orde 2</string>
+         </attribute>
+         <widget class="plot" name="widget_24" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>881</width>
+            <height>421</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_29">
+         <attribute name="title">
+          <string>Orde 3</string>
+         </attribute>
+         <widget class="plot" name="widget_26" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>901</width>
+            <height>431</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_30">
+         <attribute name="title">
+          <string>Orde 4</string>
+         </attribute>
+         <widget class="plot" name="widget_35" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>901</width>
+            <height>431</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_31">
+         <attribute name="title">
+          <string>Orde 5</string>
+         </attribute>
+         <widget class="plot" name="widget_37" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>891</width>
+            <height>431</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_17">
+     <attribute name="title">
+      <string>Sinyal HRV</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>931</width>
+        <height>751</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab_36">
+       <attribute name="title">
+        <string>Gradien Orde 3</string>
+       </attribute>
+       <widget class="plot" name="widget_23" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>921</width>
+          <height>481</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_37">
+       <attribute name="title">
+        <string>QRS Detection</string>
+       </attribute>
+       <widget class="plot" name="widget_25" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>901</width>
+          <height>511</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_38">
+       <attribute name="title">
+        <string>HRV</string>
+       </attribute>
+       <widget class="plot" name="widget_27" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>921</width>
+          <height>481</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Time Domain</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>901</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Histogram</string>
+      </property>
+      <widget class="plot" name="widget_30" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>861</width>
+         <height>471</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>540</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SDNN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>570</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RMSSD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>600</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>pNN50</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>630</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SDSD</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>540</y>
+        <width>351</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>570</y>
+        <width>351</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>600</y>
+        <width>351</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>630</y>
+        <width>351</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Frekuensi Domain</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>911</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Welch Method</string>
+      </property>
+      <widget class="plot" name="widget_31" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>861</width>
+         <height>251</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>310</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>340</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>HF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>350</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ratio LF/HF</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_7">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>310</y>
+        <width>231</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_8">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>340</y>
+        <width>231</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_9">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>350</y>
+        <width>251</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>901</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Autonomic Balance Diagram</string>
+      </property>
+      <widget class="plot" name="widget_32" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>831</width>
+         <height>291</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>Nonlinear</string>
+     </attribute>
+     <widget class="plot" name="widget_33" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>871</width>
+        <height>531</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>580</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SD1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>610</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SD2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>650</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ratio SD1/SD2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_10">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>580</y>
+        <width>341</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_11">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>610</y>
+        <width>341</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_12">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>650</y>
+        <width>341</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Respiratory</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>891</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Respiraatory Signal</string>
+      </property>
+      <widget class="plot" name="widget_34" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>851</width>
+         <height>531</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>620</y>
+        <width>55</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MPF</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>660</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Respiratory Rate</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_13">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>620</y>
+        <width>381</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_14">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>660</y>
+        <width>381</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1106</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>plot</class>
+   <extends>QWidget</extends>
+   <header location="global">plot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
